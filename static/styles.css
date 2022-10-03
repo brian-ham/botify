@@ -1,0 +1,168 @@
+h1
+{
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgb(240, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 5px 5px #4FB0AD;
+    font-size: 1300%;
+}
+
+h2
+{
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgb(240, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    font-size: 800%;
+    text-shadow: 5px 5px #4FB0AD;
+}
+
+h3
+{
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgb(240, 255, 255);
+    text-shadow: 3px 3px #4FB0AD;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 300%;
+}
+
+@font-face 
+{
+    font-family: GothamMedium;
+    src: url(gotham-medium.ttf);
+}
+
+h4
+{
+    text-align: center;
+    font-family: GothamMedium;
+    font-size: 200%;
+    color: white;
+}
+
+@keyframes changeBack
+{
+    from {background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1729&q=80');}
+    to {background-image: url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1729&q=80');}
+}
+
+body 
+{
+    background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1729&q=80');
+    animation-name: changeBack;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+form
+{
+	width:400px;
+	margin: 0 auto;
+}
+
+p
+{
+    font-family: GothamMedium;
+    font-size: 30px;
+    color:rgb(240, 255, 255);
+}
+
+label
+{
+    font-family: GothamMedium;
+    font-size: 20px;
+    color:rgb(240, 255, 255);
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+table, th, td, thead
+{
+    border: 3px solid black;
+}
+
+td
+{
+    font-family: GothamMedium;
+    font-size: 15px;
+    color:rgb(240, 255, 255);
+}
+
+thead
+{
+    background:royalblue;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.centerbutton
+{
+    width:180px;
+    left: 50%;
+    transform: translate(105%);
+}
+
+#button
+{
+    font-family: GothamMedium;
+    height:45px;
+    width:200px;
+    background-color:#4FB0AD;
+    border-width:0px;
+    text-align: center;
+}
+
+#startButton
+{
+    font-family: GothamMedium; 
+    background-color: #4FB0AD; 
+    border: none;
+}
+
+.centerdiv
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.colored
+{
+    color: black;
+    background: none;
+}
+
+.description
+{
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.slideLeft {
+    position: relative;
+    left: -1000px;
+    background: none;
+    -webkit-animation: slide 2s forwards;
+    animation: slide 2s forwards;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0;}
+}
+
+@keyframes slide {
+    100% { left: 0;}
+}
